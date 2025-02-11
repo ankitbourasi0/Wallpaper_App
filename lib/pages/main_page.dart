@@ -44,9 +44,10 @@ class _MainPageState extends State<MainPage> {
       //but we want to perform animation on scroll events, for that we need to use custom scroll event in each page(Home, Explore, Account)
       bottomNavigationBar: AnimatedContainer(
         duration: const Duration(milliseconds: 300),
-        height: _isVisible ? 100 : 0,
+        height: _isVisible ? 80 : 0,
         child: Wrap( //provide dynamic sizing to the bottom navigation bar
           children:[ BottomNavigationBar(
+            elevation: 0,
               type: BottomNavigationBarType.fixed,
               fixedColor: Colors.black,
               unselectedItemColor: Colors.grey,
